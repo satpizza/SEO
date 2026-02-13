@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CryptoGlass | Лучшая криптовалютная биржа в России</title>
-    <meta name="description" content="CryptoGlass — передовая биржа для торговли криптовалютой. Безопасные сделки, низкие комиссии, мгновенные транзакции. Начните инвестировать сегодня.">
+    <title>CryptoGlass | Наши клиенты и отзывы</title>
+    <meta name="description" content="Более 500 000 трейдеров доверяют CryptoGlass. Реальные отзывы клиентов о работе с биржей.">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     
     <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
@@ -93,7 +93,8 @@
             padding: 5px 10px;
         }
 
-        nav a:hover {
+        nav a:hover,
+        nav a.active {
             opacity: 1;
             color: var(--primary);
         }
@@ -106,66 +107,23 @@
         }
 
         h1 {
-            font-size: clamp(40px, 8vw, 70px);
-            font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 25px;
+            font-size: 48px;
+            margin-bottom: 20px;
             text-align: center;
         }
 
-        .hero-desc {
-            font-size: 18px;
+        .section-desc {
+            text-align: center;
             opacity: 0.6;
-            max-width: 700px;
-            margin: 0 auto 40px;
-            text-align: center;
-        }
-
-        .btn-group {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 80px;
-        }
-
-        button, .btn {
-            padding: 16px 35px;
-            border-radius: 14px;
-            font-weight: 700;
-            cursor: pointer;
-            transition: var(--transition);
-            border: none;
-            font-size: 16px;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .btn-primary {
-            background: var(--primary);
-            color: #000;
-            box-shadow: 0 10px 20px rgba(0, 242, 255, 0.3);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(0, 242, 255, 0.4);
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: #fff;
-            border: 1px solid var(--glass-border);
-        }
-
-        .btn-outline:hover {
-            background: var(--glass);
+            margin-bottom: 60px;
+            font-size: 18px;
         }
 
         .stats {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
-            margin-top: 50px;
+            margin-bottom: 60px;
         }
 
         .stat-item {
@@ -178,7 +136,7 @@
         }
 
         .stat-value {
-            font-size: 32px;
+            font-size: 36px;
             font-weight: 800;
             color: var(--primary);
         }
@@ -186,57 +144,65 @@
         .stat-label {
             font-size: 14px;
             opacity: 0.5;
-            text-transform: uppercase;
             margin-top: 5px;
         }
 
-        #crypto {
-            padding: 80px 0;
-        }
-
-        h2 {
-            font-size: 40px;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        .section-desc {
-            text-align: center;
-            opacity: 0.6;
-            margin-bottom: 50px;
-        }
-
-        .crypto-grid {
+        .testimonials-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
         }
 
-        .crypto-card {
+        .testimonial-card {
             background: var(--glass);
             border: 1px solid var(--glass-border);
-            padding: 30px;
+            padding: 35px;
             border-radius: 24px;
             backdrop-filter: blur(10px);
+            transition: var(--transition);
+            position: relative;
         }
 
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin: 50px 0;
+        .testimonial-card:hover {
+            border-color: var(--primary);
+            transform: scale(1.02);
         }
 
-        .feature-card {
-            padding: 40px;
-            border-radius: 30px;
-            background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 100%);
-            border: 1px solid var(--glass-border);
-        }
-
-        .feature-card h3 {
-            margin-bottom: 15px;
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 80px;
             color: var(--primary);
+            opacity: 0.2;
+            font-family: serif;
+        }
+
+        .client-name {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: var(--primary);
+        }
+
+        .client-role {
+            font-size: 14px;
+            opacity: 0.5;
+            margin-bottom: 20px;
+        }
+
+        .client-text {
+            font-style: italic;
+            line-height: 1.8;
+            position: relative;
+            z-index: 1;
+        }
+
+        .client-rating {
+            margin-top: 20px;
+            color: #ffd700;
+            font-size: 18px;
         }
 
         footer {
@@ -297,20 +263,30 @@
         @media (max-width: 768px) {
             nav { display: none; }
             .footer-grid { grid-template-columns: 1fr; }
+            .testimonials-grid { grid-template-columns: 1fr; }
         }
     </style>
     
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "CryptoGlass",
-      "url": "https://seo-djry.vercel.app/",
-      "description": "Криптовалютная биржа для торговли Bitcoin, Ethereum и другими криптовалютами",
-      "publisher": {
-        "@type": "Organization",
-        "name": "CryptoGlass",
-        "logo": "https://seo-djry.vercel.app//logo.png"
+      "@type": "WebPage",
+      "name": "Отзывы клиентов CryptoGlass",
+      "description": "Реальные отзывы трейдеров о работе с криптовалютной биржей",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "Review",
+            "author": "Алексей Иванов",
+            "reviewBody": "Лучшая биржа в России по скорости вывода средств"
+          },
+          {
+            "@type": "Review",
+            "author": "Екатерина Смирнова",
+            "reviewBody": "Очень удобный интерфейс и быстрая поддержка"
+          }
+        ]
       }
     }
     </script>
@@ -322,11 +298,11 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Главная</a></li>
-                    <li><a href="#crypto">Криптовалюты</a></li>
-                    <li><a href="#features">Возможности</a></li>
+                    <li><a href="index.html#crypto">Криптовалюты</a></li>
+                    <li><a href="index.html#features">Возможности</a></li>
                     <li><a href="promotions.html">Акции</a></li>
                     <li><a href="news.html">Новости</a></li>
-                    <li><a href="clients.html">Наши клиенты</a></li>
+                    <li><a href="clients.html" class="active">Наши клиенты</a></li>
                     <li><a href="portfolio.html">Портфолио</a></li>
                     <li><a href="#contact">Контакты</a></li>
                 </ul>
@@ -335,90 +311,72 @@
     </header>
 
     <main>
-        <section class="page-content" id="home">
-            <h1>Инвестирование в криптовалюту с выгодой</h1>
-            <p class="hero-desc">Безопасная покупка, продажа и обмен криптовалют с минимальными комиссиями.</p>
-            
-            <div class="btn-group">
-                <button class="btn-primary" onclick="window.location.href='promotions.html'">Начать торговлю</button>
-                <button class="btn-outline">Узнать больше</button>
-            </div>
+        <section class="page-content">
+            <h1>Наши клиенты</h1>
+            <p class="section-desc">Более 500 000 трейдеров доверяют нам свои инвестиции</p>
             
             <div class="stats">
                 <div class="stat-item">
                     <div class="stat-value">500K+</div>
-                    <div class="stat-label">Пользователей</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value">$10B+</div>
-                    <div class="stat-label">Объем торгов</div>
+                    <div class="stat-label">Частных инвесторов</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-value">150+</div>
-                    <div class="stat-label">Криптовалют</div>
+                    <div class="stat-label">Институциональных клиентов</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-value">24/7</div>
-                    <div class="stat-label">Поддержка</div>
+                    <div class="stat-value">98%</div>
+                    <div class="stat-label">Довольных клиентов</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">4.9</div>
+                    <div class="stat-label">Средний рейтинг</div>
                 </div>
             </div>
-
-            <section id="crypto">
-                <h2>Популярные криптовалюты</h2>
-                <p class="section-desc">Следите за курсом и покупайте в один клик</p>
-                <div class="crypto-grid">
-                    <div class="crypto-card">
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-                            <span style="font-weight: 800;">BTC</span>
-                            <span style="color: #00ff88;">+2.4%</span>
-                        </div>
-                        <div style="font-size: 24px; font-weight: 800;">$67,432</div>
-                        <div style="opacity: 0.5;">Bitcoin</div>
-                    </div>
-                    <div class="crypto-card">
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-                            <span style="font-weight: 800;">ETH</span>
-                            <span style="color: #00ff88;">+1.8%</span>
-                        </div>
-                        <div style="font-size: 24px; font-weight: 800;">$3,421</div>
-                        <div style="opacity: 0.5;">Ethereum</div>
-                    </div>
-                    <div class="crypto-card">
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-                            <span style="font-weight: 800;">SOL</span>
-                            <span style="color: #00ff88;">+5.2%</span>
-                        </div>
-                        <div style="font-size: 24px; font-weight: 800;">$145</div>
-                        <div style="opacity: 0.5;">Solana</div>
-                    </div>
-                    <div class="crypto-card">
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-                            <span style="font-weight: 800;">USDT</span>
-                            <span style="color: #888;">0.0%</span>
-                        </div>
-                        <div style="font-size: 24px; font-weight: 800;">$1.00</div>
-                        <div style="opacity: 0.5;">Tether</div>
-                    </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="client-name">Алексей Иванов</div>
+                    <div class="client-role">Трейдер, стаж 5 лет</div>
+                    <div class="client-text">"Лучшая биржа в России по скорости вывода средств. Пользуюсь с 2024 года. Ни разу не было проблем с выводом крупных сумм."</div>
+                    <div class="client-rating">★★★★★</div>
                 </div>
-            </section>
-
-            <section id="features">
-                <h2>Почему выбирают нас</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <h3>Максимальная безопасность</h3>
-                        <p>Многоуровневая система защиты и холодное хранение 98% средств.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Мгновенные транзакции</h3>
-                        <p>Высокоскоростной движок обработки ордеров.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Покупка с карты</h3>
-                        <p>Прямая покупка через Visa/Mastercard, Apple Pay, Google Pay.</p>
-                    </div>
+                
+                <div class="testimonial-card">
+                    <div class="client-name">Екатерина Смирнова</div>
+                    <div class="client-role">Инвестор</div>
+                    <div class="client-text">"Очень удобный интерфейс и быстрая поддержка. Рекомендую всем знакомым. Отдельное спасибо за обучающие материалы."</div>
+                    <div class="client-rating">★★★★★</div>
                 </div>
-            </section>
+                
+                <div class="testimonial-card">
+                    <div class="client-name">Дмитрий Козлов</div>
+                    <div class="client-role">Владелец криптофонда</div>
+                    <div class="client-text">"Работаем с CryptoGlass с момента основания. Надежность и безопасность на высшем уровне. API работает без сбоев."</div>
+                    <div class="client-rating">★★★★★</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="client-name">Ольга Петрова</div>
+                    <div class="client-role">Инвестор</div>
+                    <div class="client-text">"Отличная платформа для пассивного дохода. Стейкинг приносит стабильный доход. Выплаты всегда вовремя."</div>
+                    <div class="client-rating">★★★★★</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="client-name">Михаил Соколов</div>
+                    <div class="client-role">Дей-трейдер</div>
+                    <div class="client-text">"Низкие комиссии и высокая скорость исполнения ордеров. Идеально для скальпинга. Рекомендую профессионалам."</div>
+                    <div class="client-rating">★★★★★</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="client-name">Анна Волкова</div>
+                    <div class="client-role">Начинающий трейдер</div>
+                    <div class="client-text">"Очень понятная платформа для новичков. Быстро разобралась, начала зарабатывать. Поддержка помогает 24/7."</div>
+                    <div class="client-rating">★★★★★</div>
+                </div>
+            </div>
         </section>
     </main>
 
