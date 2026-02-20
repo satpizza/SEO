@@ -300,20 +300,178 @@
         }
     </style>
     
-    <script type="application/ld+json">
+   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "CryptoGlass",
+      "@id": "https://seo-djry.vercel.app/#website",
       "url": "https://seo-djry.vercel.app/",
-      "description": "Криптовалютная биржа для торговли Bitcoin, Ethereum и другими криптовалютами",
+      "name": "CryptoGlass",
+      "description": "Будущее финансов начинается здесь. Присоединяйтесь к самой технологичной платформе обмена криптовалют.",
       "publisher": {
         "@type": "Organization",
         "name": "CryptoGlass",
-        "logo": "https://seo-djry.vercel.app//logo.png"
+        "logo": "https://seo-djry.vercel.app/logo.png"
+      },
+      "inLanguage": "ru-RU",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://seo-djry.vercel.app/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
       }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://seo-djry.vercel.app/#webpage",
+      "url": "https://seo-djry.vercel.app/",
+      "name": "CryptoGlass | Лучшая криптовалютная биржа в России: покупка, продажа и обмен Bitcoin, Ethereum",
+      "description": "CryptoGlass — передовая биржа для торговли криптовалютой. Безопасные сделки, низкие комиссии, мгновенные транзакции. Начните инвестировать сегодня.",
+      "isPartOf": {
+        "@id": "https://seo-djry.vercel.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://seo-djry.vercel.app/#breadcrumb"
+      },
+      "inLanguage": "ru-RU"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://seo-djry.vercel.app/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://seo-djry.vercel.app/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://seo-djry.vercel.app/#organization",
+      "name": "CryptoGlass",
+      "legalName": "CryptoGlass Exchange",
+      "url": "https://seo-djry.vercel.app/",
+      "logo": "https://seo-djry.vercel.app/logo.png",
+      "foundingDate": "2023",
+      "description": "Технологичная криптовалютная биржа с передовыми решениями безопасности",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Криптовалютная, д. 1",
+        "postalCode": "101000",
+        "addressLocality": "Москва",
+        "addressCountry": "RU"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+7-987-996-10-10",
+        "email": "support@cryptoglass.ru",
+        "availableLanguage": ["Russian", "English"]
+      },
+      "sameAs": [
+        "https://t.me/cryptoglass",
+        "https://twitter.com/cryptoglass",
+        "https://facebook.com/cryptoglass",
+        "https://instagram.com/cryptoglass"
+      ]
+    },
+    {
+      "@type": "FinancialService",
+      "name": "CryptoGlass Exchange",
+      "description": "Криптовалютная биржа для покупки, продажи и торговли цифровыми активами",
+      "url": "https://seo-djry.vercel.app/",
+      "feesAndCommissionsSpecification": "Низкие комиссии от 0.1%",
+      "currenciesAccepted": "BTC, ETH, USDT, SOL, RUB, USD, EUR",
+      "areaServed": "Worldwide",
+      "serviceType": "Cryptocurrency Exchange",
+      "provider": {
+        "@id": "https://seo-djry.vercel.app/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "name": "Популярные криптовалюты",
+      "description": "Список популярных криптовалют для торговли",
+      "numberOfItems": 4,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Bitcoin",
+          "url": "https://seo-djry.vercel.app/bitcoin"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Ethereum",
+          "url": "https://seo-djry.vercel.app/ethereum"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Solana",
+          "url": "https://seo-djry.vercel.app/solana"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Tether",
+          "url": "https://seo-djry.vercel.app/tether"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как вывести деньги с крипты?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Перейдите в раздел 'Кошелек', выберите криптовалюту и нажмите 'Вывести'. Средства поступят в течение 5-10 минут."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие комиссии на бирже?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Базовая комиссия составляет 0.1% за сделку. Для VIP-клиентов комиссия снижается до 0.05%."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как пополнить счет?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Пополнить счет можно банковской картой Visa/Mastercard, через P2P-обменник или переводом USDT на ваш кошелек."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Безопасно ли хранить криптовалюту?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, мы используем многоуровневую систему защиты и холодное хранение 98% средств клиентов."
+          }
+        }
+      ]
     }
-    </script>
+  ]
+}
+</script>
 </head>
 <body>
     <header>

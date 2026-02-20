@@ -280,37 +280,179 @@
         }
     </style>
     
-    <script type="application/ld+json">
+   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Портфолио CryptoGlass",
-      "description": "Успешные кейсы инвестиций клиентов криптовалютной биржи",
-      "mainEntity": {
-        "@type": "ItemList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
+      "@id": "https://seo-djry.vercel.app/portfolio.html#webpage",
+      "url": "https://seo-djry.vercel.app/portfolio.html",
+      "name": "CryptoGlass | Портфолио и успешные кейсы",
+      "description": "Реальные примеры успешных инвестиций клиентов CryptoGlass. Кейсы с доходностью до 215%. Истории успеха и стратегии заработка.",
+      "isPartOf": {
+        "@id": "https://seo-djry.vercel.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://seo-djry.vercel.app/portfolio.html#breadcrumb"
+      },
+      "inLanguage": "ru-RU"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://seo-djry.vercel.app/portfolio.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://seo-djry.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Портфолио и кейсы",
+          "item": "https://seo-djry.vercel.app/portfolio.html"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://seo-djry.vercel.app/#organization",
+      "name": "CryptoGlass",
+      "url": "https://seo-djry.vercel.app/",
+      "logo": "https://seo-djry.vercel.app/logo.png"
+    },
+    {
+      "@type": "ItemList",
+      "name": "Инвестиционные кейсы CryptoGlass",
+      "description": "Реальные примеры успешных инвестиций наших клиентов",
+      "numberOfItems": 6,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "InvestmentFund",
             "name": "Инвестиции в Ethereum",
-            "description": "Прибыль 215% за 6 месяцев"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Торговля Solana",
-            "description": "Доходность 8.5% в месяц"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Стейкинг USDT",
-            "description": "12% годовых"
+            "description": "Клиент инвестировал 50 000 USDT в Ethereum в январе 2025. Прибыль через 6 месяцев составила 215%.",
+            "amount": {
+              "@type": "MonetaryAmount",
+              "currency": "USDT",
+              "value": "107500"
+            },
+            "return": "215%"
           }
-        ]
-      }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "InvestmentFund",
+            "name": "Торговля Solana",
+            "description": "Активная торговля SOL с использованием API. 450 сделок, средняя доходность 8.5% в месяц.",
+            "amount": {
+              "@type": "MonetaryAmount",
+              "currency": "USDT",
+              "value": "34200"
+            },
+            "return": "8.5%/мес"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "InvestmentFund",
+            "name": "Стейкинг USDT",
+            "description": "Пассивный доход через стейкинг. Клиент разместил 100 000 USDT на 12 месяцев под 12% годовых.",
+            "amount": {
+              "@type": "MonetaryAmount",
+              "currency": "USDT",
+              "value": "12000"
+            },
+            "return": "12% годовых"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "InvestmentFund",
+            "name": "Торговля Bitcoin",
+            "description": "Скальпинг на волатильности BTC. Использование кредитного плеча 3x. Доходность 15% в месяц.",
+            "amount": {
+              "@type": "MonetaryAmount",
+              "currency": "USDT",
+              "value": "45000"
+            },
+            "return": "15%/мес"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "InvestmentFund",
+            "name": "Арбитраж ETH/USDT",
+            "description": "Торговля на разнице курсов между биржами через API. 890 сделок за 4 месяца.",
+            "amount": {
+              "@type": "MonetaryAmount",
+              "currency": "USDT",
+              "value": "28000"
+            },
+            "return": "5%/мес"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "InvestmentFund",
+            "name": "Портфель из 5 монет",
+            "description": "Диверсифицированный портфель: BTC 40%, ETH 30%, SOL 15%, DOT 10%, MATIC 5%.",
+            "amount": {
+              "@type": "MonetaryAmount",
+              "currency": "USDT",
+              "value": "82000"
+            },
+            "return": "82%"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Реальные ли эти кейсы?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, все кейсы реальные и собраны на основе данных торговли наших клиентов. Имена изменены по просьбе клиентов."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как повторить такой результат?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зарегистрируйтесь на бирже, изучите обучающие материалы и начните с малых сумм. Результаты зависят от стратегии и рыночной ситуации."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какой кейс самый безопасный?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Стейкинг USDT под 12% годовых — самый консервативный и безопасный способ заработка с гарантированной доходностью."
+          }
+        }
+      ]
     }
-    </script>
+  ]
+}
+</script>
 </head>
 <body>
     <header>
