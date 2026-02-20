@@ -280,80 +280,72 @@
         }
     </style>
     
-   <script type="application/ld+json">
+ <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
+  {
+      "@type": "WebSite",
+      "@id": "https://seo-djry.vercel.app/portfolio.html/#website",
+      "url": "https://seo-djry.vercel.app/portfolio.html",
+      "name": "CryptoGlass",
+      "description": "Будущее финансов начинается здесь. Присоединяйтесь к самой технологичной платформе обмена криптовалют.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "CryptoGlass",
+        "logo": "https://seo-djry.vercel.app/logo.png"
+      },
+      "inLanguage": "ru-RU"
+     },
     {
       "@type": "WebPage",
-      "@id": "https://seo-djry.vercel.app/portfolio.html#webpage",
-      "url": "https://seo-djry.vercel.app/portfolio.html",
-      "name": "CryptoGlass | Портфолио и успешные кейсы",
-      "description": "Реальные примеры успешных инвестиций клиентов CryptoGlass. Кейсы с доходностью до 215%. Истории успеха и стратегии заработка.",
+      "@id": "https://seo-djry.vercel.app/news.html#webpage",
+      "url": "https://seo-djry.vercel.app/news.html",
+      "name": "CryptoGlass | Новости криптовалютной биржи",
+      "description": "Последние новости CryptoGlass: получение лицензии ЦБ РФ, запуск новых криптовалют, обновление мобильного приложения и другие события.",
       "isPartOf": {
         "@id": "https://seo-djry.vercel.app/#website"
       },
       "breadcrumb": {
-        "@id": "https://seo-djry.vercel.app/portfolio.html#breadcrumb"
+        "@id": "https://seo-djry.vercel.app/news.html#breadcrumb"
       },
       "inLanguage": "ru-RU"
-    },
-    {
-     {
+      }
+      ]
+      
+    }
+   
+</script>
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
-  "@graph": [
-    {
       "@type": "BreadcrumbList",
-      "@id": "https://seo-djry.vercel.app/#breadcrumb",
+      "@id": "https://seo-djry.vercel.app/news.html#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Главная",
           "item": "https://seo-djry.vercel.app/"
-        }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://seo-djry.vercel.app/promotions.html#breadcrumb",
-      "itemListElement": [
+        },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Акции",
           "item": "https://seo-djry.vercel.app/promotions.html"
-        }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://seo-djry.vercel.app/news.html#breadcrumb",
-      "itemListElement": [
+        },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Новости",
           "item": "https://seo-djry.vercel.app/news.html"
-        }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://seo-djry.vercel.app/clients.html#breadcrumb",
-      "itemListElement": [
+        },
         {
           "@type": "ListItem",
           "position": 4,
           "name": "Наши клиенты",
           "item": "https://seo-djry.vercel.app/clients.html"
-        }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://seo-djry.vercel.app/portfolio.html#breadcrumb",
-      "itemListElement": [
+        },
         {
           "@type": "ListItem",
           "position": 5,
@@ -361,144 +353,38 @@
           "item": "https://seo-djry.vercel.app/portfolio.html"
         }
       ]
-    }
-  ]
 }
-    {
-      "@type": "Organization",
-      "@id": "https://seo-djry.vercel.app/#organization",
-      "name": "CryptoGlass",
-      "url": "https://seo-djry.vercel.app/",
-      "logo": "https://seo-djry.vercel.app/logo.png"
-    },
-    {
-      "@type": "ItemList",
-      "name": "Инвестиционные кейсы CryptoGlass",
-      "description": "Реальные примеры успешных инвестиций наших клиентов",
-      "numberOfItems": 6,
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "item": {
-            "@type": "InvestmentFund",
-            "name": "Инвестиции в Ethereum",
-            "description": "Клиент инвестировал 50 000 USDT в Ethereum в январе 2025. Прибыль через 6 месяцев составила 215%.",
-            "amount": {
-              "@type": "MonetaryAmount",
-              "currency": "USDT",
-              "value": "107500"
-            },
-            "return": "215%"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "item": {
-            "@type": "InvestmentFund",
-            "name": "Торговля Solana",
-            "description": "Активная торговля SOL с использованием API. 450 сделок, средняя доходность 8.5% в месяц.",
-            "amount": {
-              "@type": "MonetaryAmount",
-              "currency": "USDT",
-              "value": "34200"
-            },
-            "return": "8.5%/мес"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "item": {
-            "@type": "InvestmentFund",
-            "name": "Стейкинг USDT",
-            "description": "Пассивный доход через стейкинг. Клиент разместил 100 000 USDT на 12 месяцев под 12% годовых.",
-            "amount": {
-              "@type": "MonetaryAmount",
-              "currency": "USDT",
-              "value": "12000"
-            },
-            "return": "12% годовых"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "item": {
-            "@type": "InvestmentFund",
-            "name": "Торговля Bitcoin",
-            "description": "Скальпинг на волатильности BTC. Использование кредитного плеча 3x. Доходность 15% в месяц.",
-            "amount": {
-              "@type": "MonetaryAmount",
-              "currency": "USDT",
-              "value": "45000"
-            },
-            "return": "15%/мес"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "item": {
-            "@type": "InvestmentFund",
-            "name": "Арбитраж ETH/USDT",
-            "description": "Торговля на разнице курсов между биржами через API. 890 сделок за 4 месяца.",
-            "amount": {
-              "@type": "MonetaryAmount",
-              "currency": "USDT",
-              "value": "28000"
-            },
-            "return": "5%/мес"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 6,
-          "item": {
-            "@type": "InvestmentFund",
-            "name": "Портфель из 5 монет",
-            "description": "Диверсифицированный портфель: BTC 40%, ETH 30%, SOL 15%, DOT 10%, MATIC 5%.",
-            "amount": {
-              "@type": "MonetaryAmount",
-              "currency": "USDT",
-              "value": "82000"
-            },
-            "return": "82%"
-          }
-        }
-      ]
-    },
-    {
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Реальные ли эти кейсы?",
+          "name": "Какие новости появились на бирже?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Да, все кейсы реальные и собраны на основе данных торговли наших клиентов. Имена изменены по просьбе клиентов."
+            "text": "CryptoGlass получила лицензию ЦБ РФ, запущены торги Solana, обновлено мобильное приложение и внедрена новая система безопасности."
           }
         },
         {
           "@type": "Question",
-          "name": "Как повторить такой результат?",
+          "name": "Когда запустили Solana?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Зарегистрируйтесь на бирже, изучите обучающие материалы и начните с малых сумм. Результаты зависят от стратегии и рыночной ситуации."
+            "text": "Торги Solana (SOL) запущены 10 февраля 2026 года. Для первых 1000 трейдеров действует нулевая комиссия."
           }
         },
         {
           "@type": "Question",
-          "name": "Какой кейс самый безопасный?",
+          "name": "Какие обновления в приложении?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Стейкинг USDT под 12% годовых — самый консервативный и безопасный способ заработка с гарантированной доходностью."
+            "text": "В версии 2.0 добавлена биометрия, мгновенные переводы по QR-коду и поддержка Apple Pay с Google Pay."
           }
         }
-      ]
-    }
-  ]
+      ] 
 }
 </script>
 </head>
