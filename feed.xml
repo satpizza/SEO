@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+    <title>CryptoGlass | Новости</title>
+    <link>https://seo-djry.vercel.app</link>
+    <description>Новости криптовалютной биржи</description>
+    <language>ru</language>
+    <lastBuildDate>Fri, 27 Feb 2026 15:30:00 +0300</lastBuildDate>
+    
+    <item>
+        <title>CryptoGlass получила лицензию ЦБ РФ</title>
+        <link>https://seo-djry.vercel.app/news/license-cbr</link>
+        <description>Официальное признание и полное соответствие законодательству РФ.</description>
+        <pubDate>Fri, 13 Feb 2026 10:00:00 +0300</pubDate>
+    </item>
+    
+    <item>
+        <title>Запуск торгов Solana</title>
+        <link>https://seo-djry.vercel.app/news/solana-listing</link>
+        <description>Новая криптовалюта доступна для покупки и продажи.</description>
+        <pubDate>Tue, 10 Feb 2026 14:30:00 +0300</pubDate>
+    </item>
+    
+    <item>
+        <title>Мобильное приложение 2.0</title>
+        <link>https://seo-djry.vercel.app/news/mobile-app-2</link>
+        <description>Обновление с биометрией и QR-переводами.</description>
+        <pubDate>Thu, 05 Feb 2026 11:15:00 +0300</pubDate>
+    </item>
+    
+    <item>
+        <title>Нулевая комиссия на BTC</title>
+        <link>https://seo-djry.vercel.app/promotions/zero-fee-btc</link>
+        <description>Торгуйте Bitcoin без комиссии 30 дней.</description>
+        <pubDate>Sun, 01 Feb 2026 00:00:00 +0300</pubDate>
+    </item>
+    
+    <item>
+        <title>Бонус 100 USDT</title>
+        <link>https://seo-djry.vercel.app/promotions/bonus-100-usdt</link>
+        <description>Пополните счет от 1000 USDT и получите 100 USDT бонусом.</description>
+        <pubDate>Sun, 01 Feb 2026 00:00:00 +0300</pubDate>
+    </item>
+    </channel>
+</rss>
